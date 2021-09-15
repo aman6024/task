@@ -1,0 +1,249 @@
+.CardWrapper {
+    height: 350px;
+    width: 600px;
+    box-shadow: rgb(208 208 208) 0px 0px 20px;
+    margin: 20px 0;
+    position: relative;
+}
+
+.TopSection {
+    padding: 10px;
+    height: 240px;
+    position: relative;
+}
+
+.Overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+}
+
+.TopSection img {
+    z-index: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 200px;
+    max-width: 100%;
+}
+
+.TagsWrapper {
+    position: absolute;
+    display: flex;
+    bottom: 8px;
+    width: 100%;
+}
+
+.TagsWrapper .Tags {
+    background: white;
+    z-index: 1;
+    margin: 0 5px;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    width: auto;
+    text-transform: capitalize;
+}
+
+.TagsWrapper .Ranking {
+    color: white;
+    z-index: 1;
+    width: 58%;
+    text-align: right;
+    font-size: 11px;
+    margin-top: 5px;
+}
+
+.BottomSection {
+    padding: 10px 0;
+}
+
+.BottomSection .Wrapper {
+    display: flex;
+}
+
+.BottomSection .Wrapper .LeftWrapper {
+    flex-basis: 60%;
+}
+
+.BottomSection .Wrapper .RightWrapper {
+    flex-basis: 40%;
+    padding-right: 30px;
+}
+
+.BottomSection .Wrapper .LeftWrapper .college_name {
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "ubuntu-light";
+    margin: 2px 0;
+    padding-left: 10px;
+}
+
+.BottomSection .Wrapper .LeftWrapper .college_name .rating {
+    font-size: 10px;
+    margin-left: 2px;
+    font-weight: 400;
+}
+
+.BottomSection .Wrapper .LeftWrapper .nearest_place {
+    font-size: 12px;
+    margin: 2px 0;
+    padding-left: 10px;
+}
+
+.BottomSection .Wrapper .LeftWrapper .nearest_place span {
+    color: #757474;
+    margin-left: 2px;
+}
+
+.BottomSection .Wrapper .LeftWrapper .famous_nearest_places {
+    font-size: 12px;
+    margin: 2px 0;
+    padding-left: 10px;
+}
+
+.BottomSection .Wrapper .LeftWrapper .offertext {
+    font-size: 12px;
+    background-color: #a4f7da;
+    width: fit-content;
+    padding: 4px 7px 4px 6px;
+    border-radius: 0px 10px 10px 0px;
+    margin: 2px 0;
+    padding-left: 10px;
+}
+
+.BottomSection .Wrapper .RightWrapper .feeWrapper {
+    float: right;
+
+}
+
+.BottomSection .Wrapper .RightWrapper .feeWrapper .original_fees {
+    font-size: 12px;
+    text-decoration: line-through;
+    margin: 0 5px;
+}
+
+.BottomSection .Wrapper .RightWrapper .feeWrapper .discount {
+
+
+
+    text-align: center;
+    display: inline-block;
+    height: 12px;
+    position: relative;
+    width: 20px;
+    font-size: 9px;
+    right: 0px;
+    margin-left: 20px;
+    bottom: 3px;
+    background: red;
+    color: white;
+
+
+}
+
+.BottomSection .Wrapper .RightWrapper .feeWrapper .discount::before {
+
+    border-right: 15px solid red;
+    border-bottom: 6px solid transparent;
+    border-top: 6px solid transparent;
+    content: "";
+    height: 0;
+    position: absolute;
+    top: 0;
+    width: 0;
+    right: 20px;
+
+}
+
+
+.BottomSection .Wrapper .RightWrapper .discounted_fees {
+    clear: both;
+    clear: both;
+    float: right;
+    font-size: 18px;
+    color: red;
+    font-weight: bold;
+}
+
+
+.BottomSection .Wrapper .RightWrapper .fees_cycle {
+    clear: both;
+    color: #757474;
+    font-size: 9px;
+    float: right;
+}
+
+.BottomSection .Wrapper .RightWrapper .amenties {
+    clear: both;
+    color: #21cc92;
+    font-weight: bold;
+    font-size: 13px;
+    float: right;
+    margin-top: 3px;
+}
+
+.BottomSection .Wrapper .RightWrapper .amenties span {
+    margin-right: 2px;
+}
+
+.CardWrapper .promoted {
+    font-size: 14px;
+    width: 130px;
+    height: 40px;
+    position: absolute;
+    background: cornflowerblue;
+    z-index: 2;
+    right: 0;
+    top: -20px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+.CardWrapper .promoted:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid white;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+
+.CardWrapper .promoted:before {
+    content: "";
+    position: absolute;
+    right: -20px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+
+.CardWrapper .ratingWrapper {
+    position: absolute;
+    z-index: 2;
+    right: 20px;
+    top: 30px;
+    background: #eac367;
+    padding: 2px;
+    font-size: 12px;
+    text-align: center;
+    width: 60px;
+    color: white;
+    border-radius: 5px;
+}
+
+.CardWrapper .ratingWrapper span {
+    font-size: 10px;
+    display: inline-block;
+}
